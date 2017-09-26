@@ -35,7 +35,7 @@ public class MoveToTarget : MonoBehaviour {
 
 3.move 1m for 1sec
 
-![e2](move1mforsec.gif)
+![e3](move1mfor1sec.gif)
 ```csharp
 public class MoveToTarget : MonoBehaviour {
  
