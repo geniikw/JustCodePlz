@@ -1,1 +1,17 @@
-it's ok?
+1. Super Simple move
+![teleport](teleport.gif)
+```csharp
+public class MoveToTarget : MonoBehaviour {
+ 
+    public Transform target;
+ 
+    // Use this for initialization
+    void Start () {
+        if (target == null)
+            return;
+ 
+        transform.position = target.position;
+    }
+    
+}
+```
