@@ -1,4 +1,5 @@
-1.Super simple move.
+1.Super simple move
+
 ![e1](teleport.gif)
 ```csharp
 public class MoveToTarget : MonoBehaviour {
@@ -13,7 +14,8 @@ public class MoveToTarget : MonoBehaviour {
 ```
 
 2.move 1m/s.
-![e2](move 1m per 1sec.gif)
+
+![e2](move1mper1sec.gif)
 ```csharp
 public class MoveToTarget : MonoBehaviour {
  
