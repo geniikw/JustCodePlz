@@ -1,4 +1,4 @@
-1.Super simple move
+- Super simple move
 
 ![e1](teleport.gif)
 ```csharp
@@ -13,7 +13,7 @@ public class MoveToTarget : MonoBehaviour {
 }
 ```
 
-2.move 1m/s.
+- move 1m/s.
 
 ![e2](move1mpersec.gif)
 ```csharp
@@ -33,7 +33,7 @@ public class MoveToTarget : MonoBehaviour {
 }
 ```
 
-3.move 1m for 1sec
+- move 1m for 1sec
 
 ![e3](move1mfor1sec.gif)
 ```csharp
@@ -60,5 +60,35 @@ public class MoveToTarget : MonoBehaviour {
         }
     }
 }
+
+```
+
+- move 1m for 1sec with curve
+
+![e3](movecurvetime1.gif)
+![e3](movecurvetime.gif)
+![e3](movecurvetime3.gif)
+
+```csharp
+public class MoveToTarget : MonoBehaviour {
+ 
+    public Transform target;
+    public float moveTime = 1f;
+    public AnimationCurve curve = AnimationCurve.Linear(0,0,1,1);
+    
+    IEnumerator Start()
+    {
+        var t = 0f;
+        var start = transform.position;
+        var end = target.position;
+        while(t < 1f)
+        {
+            t += Time.deltaTime / moveTime;
+            transform.position = Vector3.LerpUnclamped(start, end, curve.Evaluate(t));
+            yield return null;
+        }
+    }
+}
+
 
 ```
