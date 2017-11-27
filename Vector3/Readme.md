@@ -1,7 +1,7 @@
 Vector3 Exmaples
 =====
 유니티에서 Vector3는 여러가지 용도로 사용됩니다. 유니티에서 Vector3를 인수로 받는 함수들은 
-인수명을 보고 각각 어떤 값을 쓰는지 알 수 있습니다. 예를들어 transform.LookAt를 보면 인수로 worldPosition인 Vector3가 들어 갑니다. 여기에는 위치값을 넣으면 됩니다.
+인수명을 보고 각각 어떤 값을 쓰는지 알 수 있습니다. 예를들어 transform.LookAt를 보면 인수로 이름이 worldPosition인 Vector3가 들어 갑니다. 여기에는 위치값을 넣으면 됩니다.
 
 ## position
 위치를 표현합니다. (10,-5,2) 라는 좌표가 있다면 x축으로 10, y축으로 -5, z축으로 2만큼 움직인 값입니다. 절대적인 좌표를 나타내는 worldPosition과 parent에 대한 상대적인 좌표를 나타내는 localPosition이 있습니다.
