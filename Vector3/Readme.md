@@ -1,10 +1,10 @@
 Vector3 Exmaples
 =====
-유니티에서 Vector3는 여러가지 용도로 사용됩니다. 하나하나 잘 알아두고 
-transform.LookAt(direction); 이런식으로 사용하지 않도록 합니다.
+유니티에서 Vector3는 여러가지 용도로 사용됩니다. 유니티에서 Vector3를 인수로 받는 함수들은 
+인수명을 보고 각각 어떤 값을 쓰는지 알 수 있습니다. 예를들어 transform.LookAt를 보면 인수로 worldPosition인 Vector3가 들어 갑니다. 여기에는 위치값을 넣으면 됩니다.
 
 ## position
-위치를 표현합니다. (10,-5,2) 라는 좌표가 있다면 x축으로 10, y축으로 -5, z축으로 2만큼 움직인 값입니다.
+위치를 표현합니다. (10,-5,2) 라는 좌표가 있다면 x축으로 10, y축으로 -5, z축으로 2만큼 움직인 값입니다. 절대적인 좌표를 나타내는 worldPosition과 parent에 대한 상대적인 좌표를 나타내는 localPosition이 있습니다.
 ```csharp
 private void Start()
 {
@@ -26,7 +26,7 @@ private void Update()
 ![e2](direction.gif)
 
 ## vector
-벡터는 방향과 길이로 이루어져 있습니다. 이 벡터의 길이를 1로 만드는 것을 normalize라고 하며 길이 정보가 없어져 direction이 되게 됩니다. 
+벡터는 방향과 길이로 이루어져 있습니다. 이 벡터의 길이를 1로 만드는 것을 normalize라고 하며 길이 정보가 없어져 direction이 됩니다. localPosition는 parent에서 child에 대한 vector라고 볼 수 도 있습니다.
 ```csharp
 private void Start()
 {
@@ -57,3 +57,15 @@ private void Start()
 }
 ```
 ![e4](axis.gif)
+
+## 형변환
+두개의 포지션 A, B가 있을 때 A에서 B로 향하는 vector와 direction을 구해보는 예제입니다.
+```csharp
+private void Start()
+{
+    var A = new Vector3(2, 1, 0); 
+    var B = new Vector3(1, 3, 0);
+    var vectorAB = B - A;
+    var directionAB = vectorAB.normalized;
+}
+```
