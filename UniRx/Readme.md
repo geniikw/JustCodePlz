@@ -4,6 +4,174 @@ UniRx Exmaples
 
 # Factory
 
+## Observable.Return
+
+## Observable.Repeat
+
+## Observable.Range
+
+## Observable.Defer
+
+## Observable.Timer
+
+## Observable.TimerFarme
+
+## Observable.Interval
+
+## Observable.TimerFrame
+
+## Observable.IntervalFrame
+
+## Observable.Create
+
+## Observable.Throw
+
+## Observable.Empty
+
+## Observable.Never
+
+## Observable.FromEvent
+
+## Observable.EveryUpdate
+
+## Observable.FixedEveryUpdate
+
+
+# Message Filter
+
+## Where
+
+## Distinct
+
+## DistinctUntilChanged
+
+## Throttle
+
+## ThrottleFrame
+
+## ThrottleFirst
+
+## ThrottleFirstFrame
+
+## First
+
+## Single/SingleOrDefault
+
+## Last/LastOrDefault
+
+## Take
+
+## TakeWhile
+
+## TakeUntil
+
+## Skip
+
+## SkipWhile
+
+## SkipUntil
+
+## OfType
+
+## IgnoreElements
+
+# Stream Merge
+
+## Amp
+
+## Zip
+
+## ZipLatest
+
+## CombineLastest
+
+## Merge
+
+## Concat
+
+## SelectMany
+
+# Transform Stream
+
+## ToReactiveProperty
+
+## ToReadOnlyReactiveProperty
+
+## ToArray
+
+## ToAwaitableEnumerator
+
+## ToLazyTask
+
+# stream branch?
+
+## Publish
+
+## PublishLast
+
+## Replay
+
+## Multicast
+
+## RefCount
+
+## Scan
+
+## Buffer
+
+## Select
+
+## Cast
+
+## SelectMany
+
+## Materialize
+
+## TimeInterval
+
+## TimeStamp
+
+## AsUnitObservable
+
+# Handle Async
+
+## Observable.ToAsync/Start
+
+## ObserveOn
+
+## ObserveOnMainThread
+
+## SubscribeOn
+
+## StartAsCoroutine // ToLazyTask
+
+# Handle Error 
+
+## Retry
+
+## Catch
+
+## CatchIgnor
+
+## OnErrorRetry
+
+# OnComplete
+
+## Repeat, RepeatSafe, RepeadtUntilDisable, RepeatUntilDestroy
+
+## Finally
+
+# other
+
+## StartWith
+
+## Wait
+
+## Do
+
+
+# Mix
+
 ## array to observable, Where(filter)
 ```csharp
 var array = new int[]{0,1,2,3,4};
