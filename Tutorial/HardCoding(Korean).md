@@ -31,7 +31,7 @@ public class HardCoding : Monobehaviour{
 
 쪼끔 더 아는 사람이라면 방향이 Vector3.Forward으로 되어 있다고 말할 것 같습니다.
 
-만약 KeyCode까지 생각한 사람이면 90점 정도일 것 같습니다.
+만약 KeyCode까지 생각한 사람이면 60점 정도일 것 같습니다.
 
 여기까지만 고쳐보죠.
 
@@ -57,9 +57,9 @@ public class LittleHardCoding : Monobehaviour {
 
 이렇게 Data에 따라서 변하게 프로그래밍 하는 것을 Data Driven 이라고 합니다.
 
-마지막 10점을 얻기위한 요소는 무엇일까요?
+더욱 점수를얻기 위한 얻기위한 요소는 무엇일까요?
 
-제가 생각한 답은 Update가 고정되어 있다는 것이입니다.
+또 하나는 Update가 고정되어 있다는 것이입니다.
 
 Update종류도 다양해서 필요에따라 LateUpdate나 FixedUpdate를 써야될 수도 있겠죠.
 
@@ -77,4 +77,8 @@ public enum UpdateType {
 
 이런 enum을 작성해서 하나의 Update만 돌아가게하는건 좀 이상해보입니다.
 
-나머지는 다음에 2편에 작성하겠습니다. 'ㅅ'/
+중복된코드가 업데이트 수 만큼 생기는 것도 이상하구요. 
+
+이것은 코루틴코드와 UniRx에 포함되어있는 마이크로코루틴을 활용해서 하면 되지만
+
+여기서는 소개하지 않겠습니다. 사실 저 정도는 하드코딩한다고 해서 누가 뭐라 그러진 않을 것 같습니다.
