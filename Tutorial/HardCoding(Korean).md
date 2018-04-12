@@ -34,7 +34,7 @@ public class HardCoding : Monobehaviour{
 - 입력이 마우스왼쪽으로 고정되어 있다.
 
 ```csharp 
-public class LittleHardCoding : Monobehaviour {
+public class DataDrivenCoding : Monobehaviour {
 	public Vector3 direction = Vector3.Forward;
 	public float speed = 10f;
 	public KeyCode keyCode = KeyCode.Mouse0;
