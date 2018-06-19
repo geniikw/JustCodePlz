@@ -62,7 +62,9 @@ public class Enemy : MonoBehaviour {
 ```
 ![range](range.gif)
 
-Another way is to use OnTriggerEnter and Exit.
+Another way is to use OnTriggerEnter and Exit. 
+
+* the above code is not correspond with gif. but i will remain.
 
 ## range with angle.
 ```csharp
