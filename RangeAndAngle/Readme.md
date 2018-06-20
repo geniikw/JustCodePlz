@@ -40,6 +40,8 @@ public class Enemy : MonoBehaviour {
             transform.rotation = Quaternion.RotateTowards(transform.rotation, Quaternion.LookRotation(dir, transform.up), 3f);
         }
     }
+    
+    /// for gizmo.
 
     private void OnDrawGizmos()
     {
@@ -92,6 +94,8 @@ public class Enemy : MonoBehaviour {
             transform.rotation = Quaternion.RotateTowards(transform.rotation, Quaternion.LookRotation(dir, transform.up), rotationMaxSpeed);
         }
     }
+
+    /// for gizmo.
 
     private void OnDrawGizmos()
     {
