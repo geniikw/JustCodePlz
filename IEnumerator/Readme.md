@@ -109,14 +109,14 @@ public class MyLinkedList<T>{
 }
 ```
 
-## Ref : Unity3D MainLoop
+## Simplify Unity3D Loop
+
 ![Loop](https://docs.unity3d.com/uploads/Main/monobehaviour_flowchart.svg)
 
-we consider only this part. Therefore, all coroutines return only null.
+we consider only this part. Therefore, we assume that all coroutines return only null.
+In fact, it will be more complicated because of things like WaitTimeForSecond.
 
 ![part](updateAndCoroutine.png)
-
-## Simplify Unity3D Loop
 
 ```csharp
 public static class Program{
