@@ -7,9 +7,14 @@ Foreach
 public class MyComponent : MonoBehaviour{
     public void Start(){
         var numbers = new MyClass();
+	
         foreach(var number in numbers){
             Debug.Log(number);
         }
+	//or 
+	var ie = numbers.GetEnumerator();
+	while (ie.MoveNext())
+            Debug.Log(ie.Current);
     }
 }
 
@@ -30,7 +35,6 @@ public class MyComponent : MonoBehaviour {
 
 	void Start () {       
         var c2 = new IEnumeratorImplement();
-        // c2 = (new ForeachClass()).GetEnumerator(); is same
         while (c2.MoveNext())
             Debug.Log(c2.Current);
     }
