@@ -109,7 +109,7 @@ public class MyLinkedList<T>{
 }
 ```
 
-## Simplify Unity3D Loop
+## Simplify virtual Unity3D loop
 
 ![Loop](https://docs.unity3d.com/uploads/Main/monobehaviour_flowchart.svg)
 
