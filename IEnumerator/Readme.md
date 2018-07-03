@@ -55,7 +55,7 @@ public class MyComponent : MonoBehaviour {
         public bool MoveNext()
         {
             m_idx++;
-            if (m_idx >= 3)
+            if (m_idx >= m_array.Length)
                 return false;
             return true;
         }
