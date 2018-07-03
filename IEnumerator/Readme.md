@@ -104,7 +104,7 @@ public class MyLinkedList<T>{
     
     public class Node<T> {
       public T data;
-      pulbic Node next;
+      public Node next;
     }
 }
 ```
