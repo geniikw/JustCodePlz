@@ -74,7 +74,7 @@ Output
 
 ## Ref : Array Example
 ```csharp
-public class MyList<T>{
+public class MyArray<T>{
     T[] m_array;
     .
     .
