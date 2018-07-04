@@ -18,7 +18,7 @@ public class MyComponent : MonoBehaviour{
     }
 }
 
-public class ForeachClass{
+public class ForeachClass{ // or inherit IEnumerable and implement IEnumerator GetEnumerator()
     //GetEnumerator is fixed name for foreach.
     public IEnumerator<float> GetEnumerator(){
         yield return 1f;
@@ -142,7 +142,7 @@ public static class Program{
                 c.Update();
             
             for( int n = m_coroutines.Lenght-1; n >= 0; n--)
-                  if(!m_coroutines[n].MoveNext())
+                  if(!m_coroutines[n].MoveNext()) // m_coroutines[n].Current is null.
                       m_coroutines[n].removeAt(n);
             }
             
