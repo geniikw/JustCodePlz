@@ -5,9 +5,9 @@
 
 ## transform.position이란? Property에 대하여
 Transform은 유니티엔진에서 객체의 위치정보를 관리하는 클래스이다.
-position은 그 Transform의 프로퍼티입니다.
+position은 그 Transform의 프로퍼티이다.
 전 내부 소스를 볼 수 없어서 조심스럽지만
-아마도(?) 이렇게 되어 있을 것입니다. ~~아님 말고~~
+아마도(?) 이렇게 되어 있을 것이다. ~~아님 말고~~
 
 ```csharp
 public class Transform{
