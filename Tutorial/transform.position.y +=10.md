@@ -251,6 +251,9 @@ void Start(){
     //transform.position.y += 10f;
     transform.position += Vector3.up * 10;
     
+    transform.Translate(0,10,0);
+    
+    
     //transform.position.y = 10f;
     var temp = transform.position;
     temp.y = 10f;
