@@ -177,7 +177,22 @@ public struct Vector3{
 
 프로퍼티가 아닌 맴버변수임을 확인할 수 있다. 
 float은 기본 자료형임을 heap에 저장할 필요는 없다. 그냥 숫자자체를 던져주면 된다.
-그래서 struct와 같은 식으로 생각하면 된다. 
+그래서 struct와 같은 식으로 생각하면 된다. 어떻게 보면 좀 바보예제인데 위와 같은방식으로 보면 다음과 같다.
+
+```csharp
+
+void Start(){
+	var pos = new Vector3(1,1,1);
+	var x = pos.x;
+	x = 3;
+	
+	Debug.Log(pos); // (1,1,1)
+}
+```
+
+숨쉬듯이 알고 있어서 당연한 예제이다. 이런 결과가 스택메모리의 특성이라는 것정도만 
+다시 집고 넘어가자.
+
 
 ## 만약 위 코드가 된다고 가정해보자.
 여기까지 읽었으면 어렴풋이 왜 안되는지 알 것이다. 확실하게 하기 위해서
@@ -197,7 +212,7 @@ void Start(){
     gameObject.transform.position.y = 100;
     //를 풀면
     var t = gameObject.transform;
-    var pos = t.position;
+    var pos = t.position;//position은 프로퍼티이다. 값의 복제가 일어남.
     pos.y = 100;
 }
 ```
@@ -245,7 +260,7 @@ public class mono : Monobehavour {
 
 ## 그럼 어떻게 해야되는데?
 
-필자가 생각하는 올바른 방법이다.
+필자가 생각하는 방법들은 다음과 같다.
 
 ```csharp
 void Start(){
