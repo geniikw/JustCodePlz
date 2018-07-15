@@ -1,4 +1,7 @@
 # JustCodePlz
 Code and example collection. we need code but explain.
 
-* 보시고 이런 예제가 있었으면 좋겠다 싶은게 있으면 이슈트래커에 올려주세요.
+## Introduce
+When you are developing a game, you usually google it. but there are just only code in stackoverflow or some pange, so you have to copy and paste that then test it. This page serve code and example gif about basic unity3d code. so you can quickly recognize whether it's the code you want.
+
+##
