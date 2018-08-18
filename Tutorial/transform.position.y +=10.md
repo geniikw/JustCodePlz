@@ -1,5 +1,5 @@
 # [gameObject.transform.position.y += 100;]가 불가능한 이유
-~~gameObject.transform.position = 10;마저도 안된다.~~
+~~gameObject.transform.position. = 10;마저도 안된다.~~
 
 왜 저게안될까? 생각보도록 하자
 
