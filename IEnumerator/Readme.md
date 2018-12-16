@@ -6,7 +6,7 @@ Foreach
 ```csharp
 public class MyComponent : MonoBehaviour{
     public void Start(){
-        var numbers = new MyClass();
+        var numbers = new ForeachClass();
 	
         foreach(var number in numbers){
             Debug.Log(number);
