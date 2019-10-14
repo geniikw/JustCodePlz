@@ -1,7 +1,7 @@
 # [gameObject.transform.position.y += 100;]가 불가능한 이유
 ~~gameObject.transform.position.y = 10;마저도 안된다.~~
 
-왜 저게안될까? 생각보도록 하자
+가끔씩 유니티를 쓰다보면 상기한 코드를 쓸 때가 있다. 왜 저게안될까? 단계별로 분석해서 알아보도록 하자.
 
 ## transform.position이란? Property에 대하여
 Transform은 유니티엔진에서 객체의 위치정보를 관리하는 클래스이다.
@@ -32,10 +32,10 @@ public class Transform{
 회전이나 스케일링 등을 할 때 계산에서 이점이 있기때문에 Matrix를 쓴다거나 하는 부분은
 넘어가자. 요점은 position으로 가져오는 Vector3값은 매번 계산되어서 새로 만들어지는 값이라는 것이다.
 Vector3 m_position이라는 값이 있고 이걸 직접넘겨준다고 가정을 해도 결과는 달라지지 않는다.
-프로퍼티는 함수개념이고 m_position의 주소를 리턴하는게 아닌 복사된 Vector3 값을 리턴하기 때문이다.
+프로퍼티는 함수개념이고 Vector3 struct라 리턴하는 순간 m_position의 주소를 리턴하는게 아닌 복사된 Vector3 값을 리턴하기 때문이다.
 
 ## class vs struct
-위 문제를 알기 위해서 일단 생각해야될 것은 class와 struct의 차이에 대하여 알고 있어야 한다.
+위 문제를 알기 위해서 일단 class와 struct의 차이에 대하여 알고 있어야 한다.
 올바른 모범생이라면 class는 heap memory에 struct는 stack memory를 
 사용한다는 것 정도는 알고 있을 것이다. 여기서는 그런 자질구래(?)한 이야기는 남겨두고
 실제 예를 통하여 뭐가 다른지 알아보자.
