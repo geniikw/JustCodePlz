@@ -3,7 +3,6 @@
 link : https://cafe.naver.com/unityhub/95835 (korean)
 
 ![q](implement.gif)
-![q](implement2.gif)
 
 ```csharp
 using System.Collections;
